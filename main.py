@@ -29,7 +29,6 @@ def search_similar_images(image_path):
     # 구글 이미지 검색 페이지로 이동
     driver.get("https://images.google.com/")
 
-    # 카메라 아이콘을 클릭하여 '이미지 업로드' 선택
     try:
         time.sleep(1)
         # 카메라 아이콘 버튼을 기다리고 클릭
@@ -67,7 +66,6 @@ def search_similar_images(image_path):
         )
         search_button.click()
 
-        # 이미지 업로드 후, 검색된 이미지를 기다리고 상위 3개 이미지 가져오기
         time.sleep(3)  # 잠시 대기 후 결과 확인
 
         try:
